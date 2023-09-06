@@ -1,0 +1,242 @@
+.detailsbox {
+  height: 100vh;
+  backdrop-filter: blur(10px);
+}
+
+.poster {
+  width: 350px;
+  height: 525px;
+  border-radius: 30px;
+}
+
+.information {
+  color: white;
+  margin-left: 30px;
+}
+
+.genres {
+  color: #ffbd59;
+  font-size: larger;
+}
+
+.overview {
+  background-color: #3b3131;
+  opacity: 60%;
+  border: none;
+  border-radius: 10px;
+}
+.overview > h3 {
+  margin-left: 0;
+  padding-top: 10px;
+}
+
+#company{
+  width: 110px;
+  margin-right: 20px;
+}
+
+.yt {
+  width: 480px;
+  height: 270px;
+}
+
+.pp {
+  border-radius: 15px;
+}
+
+.unknown {
+  background-color: white;
+  border-radius: 15px;
+}
+
+.profile1 {
+  width: 125px;
+  height: 210px;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.profile1 img {
+  border-radius: 15px;
+  position: relative;
+}
+
+.profile1 .unknown {
+  background-color: white;
+  border-radius: 15px;
+}
+
+.profile1  p {
+  color: white;
+  font-size: 14px;
+  margin-top: 5px;
+  padding-right: 15px;
+}
+
+.profile1  span {
+  color: silver;
+  font-size: 12px;
+  padding-right: 15px;
+}
+
+.others {
+  width: max-content;
+  background-color: #ffbd59;
+  border-radius: 0 0 10px 10px;
+  border: none;
+}
+
+.others p {
+  font-weight: bold;
+}
+
+.others span {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+.tvDetails {
+  width: 95%;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .poster {
+    width: 280px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .movieDetails {
+    margin: auto -10px;
+  }
+  .tvDetails {
+    margin: auto -10px;
+  }
+  .backdrop {
+    margin-top: 20px;
+  }
+  .detailsbox {
+    top: 150px;
+  }
+  .poster {
+    width: 230px;
+    height: auto;
+  }
+  .genres {
+    font-size: medium;
+  }
+  .information h1 {
+    font-size: large;
+  }
+  .rating, .release {
+    font-size: small;
+  }
+  .overview {
+    font-size: small;
+
+  }
+  .company {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .movieDetails {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .tvDetails {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .backdrop {
+    display: none;
+  }
+  .detailsbox {
+    display: contents;
+  }
+
+  .poster {
+    width: 200px;
+    height: auto;
+  }
+
+  .information {
+    margin: 15px 20px;
+  }
+  .genres {
+    font-size: small;
+  }
+
+  .information > h1 {
+    font-size: medium;
+  }
+
+  .rating {
+    font-size: smaller;
+  }
+
+  .release {
+    font-size: smaller;
+  }
+
+  .overview {
+    font-size: smaller;
+    background: none;
+    padding: 0;
+    margin-top: 0;
+  }
+
+  .company {
+    justify-content: center;
+    background-color: #3b3131;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .company img {
+    width: 70px;
+  }
+
+  .others {
+    width: 100%;
+    margin: 0 auto;
+    grid-template-columns: auto auto;
+    border-radius: 10px;
+  }
+
+  .others p {
+    font-size: small;
+    margin-left: 10px;
+    padding: 5px 0;
+  }
+
+  .others span {
+    font-size: smaller;
+  }
+
+  .cast {
+    width: 90%;
+    margin-left: 15px;
+  }
+
+  .profile {
+    width: 165px;
+    height: 230px;
+  }
+  .video {
+    width: 90%;
+    margin-left: 15px;
+  }
+  .video .yt {
+    width: 320px;
+    height: auto;
+  }
+}

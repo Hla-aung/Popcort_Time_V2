@@ -1,0 +1,33 @@
+.search {
+    border-radius: 15px;
+    box-shadow: 5px 3px 6px 0px rgba(122,116,116,0.58);
+    -webkit-box-shadow: 5px 3px 6px 0px rgba(122,116,116,0.58);
+    -moz-box-shadow: 5px 3px 6px 0px rgba(122,116,116,0.58);
+}
+
+.searchImg > img {
+    width: 160px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.unknownImg {
+    background-color: white;
+    border-radius: 15px;
+}
+
+
+@media screen and (max-width: 600px) {
+    input {
+        width: 90%;
+    }
+    .searchInfo > span {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    input {
+        width: 90%;
+    }
+}

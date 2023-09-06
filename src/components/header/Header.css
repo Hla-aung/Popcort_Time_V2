@@ -1,0 +1,66 @@
+.container{
+    max-width: 100%;
+    padding: 20px 0;
+    height: 10vh;
+    z-index: 3;
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255);
+}
+
+#toggle {
+    display: none;
+}
+
+.link:hover {
+    color: #ffbd59;
+    text-decoration: underline;
+}
+
+#icon:hover{
+    cursor: pointer;
+    color: #ffbd59;
+}
+
+@media only screen and (max-width: 900px) {
+    .flexSB {
+      display: none;
+    }
+    #account {
+      display: none;
+    }
+  
+    #toggle {
+      display: block;
+      position: absolute;
+      top: 10px;
+      bottom: 0;
+      right: 0px;
+      margin: auto;
+      cursor: pointer;
+      background: none;
+    }
+    .navMenu-list {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: white;
+      width: 50%;
+      height: 100vh;
+      z-index: 3;
+      padding: 20px;
+    }
+    .navMenu-list a{
+        margin-bottom: 20px;
+    }
+  }
+  
+  @media only screen and (min-width: 900px) {
+      .searchlink {
+          display: none;
+      }
+  }

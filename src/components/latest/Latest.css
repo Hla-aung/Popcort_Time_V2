@@ -1,0 +1,93 @@
+.latestmovie {
+  width: 95%;
+  height: 75vh;
+  margin-top: -20px;
+
+  position: relative;
+  border: none;
+  overflow: hidden;
+}
+
+.latestmovie img {
+  width: 100%;
+  height: 100%;
+}
+
+.latestmovie div:nth-child(2) {
+  z-index: 2;
+  position: absolute;
+  bottom: 50px;
+  left: 40px;
+  right: 40px;
+}
+
+.latestmovie div:nth-child(2) p{
+  color: white;
+  font-size: 14px;
+  text-align: left;
+  font-weight: 500;
+  background-color: #3B3131;
+  opacity: 60%;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.latestmovie div:nth-child(2) button {
+  background-color: #ffbd59;
+  color: black;
+  font-weight: bolder;
+  text-transform: capitalize;
+  font-size: 14px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.latestmovie div:nth-child(2) button:hover {
+  background-color: #f10000;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .latestmovie {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .latestmovie {
+    width: 90%;
+    height: auto;
+  }
+
+  .latestmovie div:nth-child(2) {
+    width: 400px;
+    bottom: 20px;
+    left: 10px;
+    right: 10px;
+    margin-right: 10px;
+  }
+
+  .latestmovie div:nth-child(2) > span {
+    font-size: 8px;
+    font-weight: 200;
+    padding: 0;
+    margin: 5px;
+    background-color: #3B3131;
+    opacity: 80%;
+  }
+  .latestmovie div:nth-child(2) p{
+    display: none;
+  }
+  .latestmovie div:nth-child(2) button {
+    margin: 10px 5px;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 5px;
+
+  }
+  .latestmovie div:nth-child(2) button > span {
+    font-size: 10px;
+  }
+}
+

@@ -1,0 +1,82 @@
+.pricing {
+  width: 95%;
+  margin: 30px auto;
+}
+
+.pricing h1 {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.pricing p {
+  color: white;
+  margin-bottom: 20px;
+}
+
+.note i {
+  color: grey;
+}
+
+.note span {
+  color: gray;
+  font-size: 14px;
+}
+
+.card {
+  max-width: 350;
+  margin: 30px;
+  padding: 20px;
+}
+
+.card h2 {
+  color: black;
+  text-align: center;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+.card ul {
+  list-style: disc;
+  line-height: 30px;
+}
+
+.card .button {
+  background-color: #f10000;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 700;
+  font-size: 15px;
+  display: block;
+  margin: auto;
+}
+
+.card .button:hover {
+  cursor: pointer;
+  transform: scale(1.1, 1.1);
+}
+
+.note {
+  margin-left: 30px;
+}
+
+@media screen and (max-width: 600px) {
+  .pricing h1 {
+    font-size: 30px;
+    margin: 10px auto;
+    text-align: center;
+  }
+
+  .pricing p {
+    margin: auto 20px;
+  }
+  .note {
+    margin-left: 15px;
+  }
+
+  .card {
+    margin: 10px;
+  }
+}
